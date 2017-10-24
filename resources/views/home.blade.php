@@ -23,14 +23,14 @@
         <br><br>
             @foreach($todos as $todo)
                 <div class="col-lg-12 justify content center text-center" >
-                    <a class="push-right" href="{{action('TodosController@destroy', $todo)}}"><acronym title="Delete"><i class="fa fa-trash fa-2x" aria-hidden="true" style="color: red"></i></acronym></a>
+                    <a class="pull-right" href="{{action('TodosController@destroy', $todo)}}"><acronym title="Delete"><i class="fa fa-trash fa-2x" aria-hidden="true" style="color: red"></i></acronym></a>
 
                 @if(!$todo->completed)
-                    <a href="{{action('TodosController@edit', $todo)}}" class="push-right"><acronym title="Update"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true">&nbsp;&nbsp;</i></acronym></a>
+                    <a href="{{action('TodosController@edit', $todo)}}" class="pull-right"><acronym title="Update"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true">&nbsp;&nbsp;</i></acronym></a>
 
-                    <a href="{{action('TodosController@completed', $todo)}}" class="push-right"><acronym title="Complete"><i class="fa fa-check-square-o fa-2x">&nbsp;&nbsp;</i></acronym></a>
+                    <a href="{{action('TodosController@completed', $todo)}}" class="pull-right"><acronym title="Complete"><i class="fa fa-check-square-o fa-2x">&nbsp;&nbsp;</i></acronym></a>
                 @else
-                    <span class="text-success push-right" style="color:#3DC841"><acronym title="Completed!"><i class="fa fa-check-square-o fa-2x">&nbsp;&nbsp;</i></acronym></span>
+                    <span class="text-success pull-right" style="color:#3DC841"><acronym title="Completed!"><i class="fa fa-check-square-o fa-2x">&nbsp;&nbsp;</i></acronym></span>
                 @endif
 
                 <p>{{str_limit(strip_tags($todo->task), 70)}} 
