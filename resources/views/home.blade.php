@@ -33,7 +33,7 @@
                     <span class="text-success pull-right" style="color:#3DC841"><acronym title="Completed!"><i class="fa fa-check-square-o fa-2x">&nbsp;&nbsp;</i></acronym></span>
                 @endif
 
-                <p>{{str_limit(strip_tags($todo->task), 70)}} 
+                <p class="lead">{{str_limit(strip_tags($todo->task), 70)}} 
                     @if(strlen(strip_tags($todo->task)) > 70)
                         <a href="{{action('TodosController@edit', $todo) }}" >read more</a>
                     @endif
