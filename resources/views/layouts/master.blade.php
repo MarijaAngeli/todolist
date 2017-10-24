@@ -19,7 +19,6 @@
         
     </head>
     <body>
-        <div id="ip">
         @include('inc.navbar')
             @if(Session::has('success'))
                 <div class="alert alert-success">
@@ -31,7 +30,6 @@
             @include('inc.messages')
                 @yield('content')
         </div>
-    </div>
         
         <script type="text/javascript" src="/js/app.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
