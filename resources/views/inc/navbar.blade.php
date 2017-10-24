@@ -9,14 +9,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                </div>
+                
+                    <a class="navbar-brand" href="{{ url('/')}}">
+                    ToDoList
+                    </a>
+               </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li>
-        <a href="/home">Home <span class="sr-only">(current)</span></a>
-      </li>
+                        &nbsp;
                     </ul>
 
                     <!-- Right Side Of Navbar -->
