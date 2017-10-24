@@ -9,11 +9,13 @@
 	 	
  	<form method="POST" action="{{action('TodosController@update',$todo)}}">
 		{{csrf_field()}}
-	
-		<div class="input-group input-group-lg">
-			<label for="task"></label>
-			<textarea name="task" class="form-control" rows="3">{{$todo->task}}</textarea>
-		</div>
+
+		<div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label for="task"></label>
+                <textarea name="task" rows="5" class="form-control">{{$todo->task}}</textarea>
+            </div>
+        </div>
 		<br>
 		<div class="form-group">	
         	<button class="btn btn-primary" type="submit">Submit</button>
