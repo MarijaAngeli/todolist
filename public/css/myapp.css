@@ -43,7 +43,7 @@ html, body {
             }
 
             .title {
-                font-size: 84px;
+                font-size: 54px;
             }
 
             .links > a {
@@ -57,5 +57,5 @@ html, body {
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: 70px;
             }
