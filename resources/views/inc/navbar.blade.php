@@ -13,7 +13,7 @@
                     <a class="navbar-brand" href="{{ url('/')}}">
                     ToDoList
                     </a>
-               
+               </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
