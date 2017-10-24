@@ -23,7 +23,7 @@
         <br><br>
             @foreach($todos as $todo)
                 <div class="col-lg-12 justify content center text-center" >
-                    <a class="pull-right" href="{{action('TodosController@destroy', $todo)}}"><acronym title="Delete"><i class="fa fa-trash fa-2x" aria-hidden="true" style="color: red"></i></acronym></a>
+                    <a class="pull-right" href="{{action('TodosController@destroy', $todo)}}"><acronym title="Delete"><i class="fa fa-trash fa-2x" aria-hidden="true" style="color: red">&nbsp;&nbsp;</i></acronym></a>
 
                 @if(!$todo->completed)
                     <a href="{{action('TodosController@edit', $todo)}}" class="pull-right"><acronym title="Update"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true">&nbsp;&nbsp;</i></acronym></a>
