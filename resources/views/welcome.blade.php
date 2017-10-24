@@ -1,4 +1,4 @@
-<!doctype html>
+{{-- <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="">
 
         <!-- Styles -->
         <style>
@@ -87,4 +88,37 @@
             </div>
         </div>
     </body>
-</html>
+</html> --}}
+
+@extends('layouts.master')
+@section('content')
+
+<div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Create Task</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
+                    @endauth
+                </div>
+            @endif
+
+            <div class="content">
+                <div class="title m-b-md">
+                    Welcome to My ToDo List!
+
+                </div>
+
+                <p class="lead">Please register or login to continue...</p>
+            </div>
+        </div>
+
+@endsection
+
+
+
+
+
+ --}}
