@@ -30,7 +30,7 @@
 
                     <a href="{{action('TodosController@completed', $todo)}}" class="float-right"><acronym title="Complete"><i class="fa fa-check-square-o fa-2x">&nbsp;&nbsp;</i></acronym></a>
                 @else
-                    <span class="text-success float-right" style="color:#3DC841"><abbr title="Completed!"><i class="fa fa-check-square-o fa-2x">&nbsp;&nbsp;</i></abbr></span>
+                    <span class="text-success float-right" style="color:#3DC841"><acronym title="Completed!"><i class="fa fa-check-square-o fa-2x">&nbsp;&nbsp;</i></acronym></span>
                 @endif
 
                 <p>{{str_limit(strip_tags($todo->task), 70)}} 
