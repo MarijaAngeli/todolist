@@ -1,4 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-static-top" style="background-color: #e3f2fd">
+ @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Create Task</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
+                    @endauth
+                </div>
+            @endif
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color: #e3f2fd">
             <div class="container">
                 <div class="navbar-header">
 
@@ -20,7 +31,6 @@
                     <ul class="nav navbar-nav">
                         &nbsp;
                     </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
